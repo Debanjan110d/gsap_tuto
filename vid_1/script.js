@@ -22,3 +22,17 @@ gsap.from(
 
     }
 )
+
+
+
+gsap.from(
+    "h1",
+    {
+        opacity: 0,
+        // color: "crimson",
+        y: 30,
+        duration: 3,
+        delay: 2,
+        stagger: 0.5 // makes wvery one goes one by one after 0.5 seconds
+    }
+)

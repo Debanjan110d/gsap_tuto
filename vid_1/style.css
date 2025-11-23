@@ -15,18 +15,31 @@ body {
 body{
     background-color: black;
     overflow: hidden;
+    color: aliceblue;
 }
 
 .box{
     height: 300px;
     width: 300px;
     color: antiquewhite;
+    position: absolute;
     
 }
 
 #box1{
     background-color: crimson;
+    top: 0;
+    left: 0;
 }
 #box2{
     background-color: cyan;
+    top: 320px;
+    left: 0;
+}
+
+h1{
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+    margin: 20px;
 }

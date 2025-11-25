@@ -36,3 +36,17 @@ gsap.from(
         stagger: 0.5 // makes wvery one goes one by one after 0.5 seconds
     }
 )
+
+gsap.to(
+    "#box3",
+    {
+        x: 1000,
+        duration: 3,
+        delay: 2,
+        rotate: 360,
+        repeat: -1,//? It will repeat the animation infinite times
+        yoyo: true,//? It will make the box go back and forth
+        ease: "power1.inOut"//? It will make the animation smooth
+    }
+
+)

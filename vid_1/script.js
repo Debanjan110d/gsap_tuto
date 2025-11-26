@@ -50,3 +50,53 @@ gsap.to(
     }
 
 )
+
+
+// gsap.to(
+//     "#box4",
+//     {
+//         x: 1000,
+//         duration: 3,
+//         delay: 3,
+//         rotate: 360,
+
+//     }
+// )
+
+// gsap.to(
+//     "#box5",
+//     {
+//         x: 1000,
+//         duration: 3,
+//         delay: 4, //* Lets calculate the calculate the durateion of delay of box4 to get the delay of box5 so that it can go after box4
+//         rotate: 360,
+
+//     }
+// )
+
+
+//! Timeline
+
+var tl = gsap.timeline() // Just declare the timeline function to the variable
+
+tl.to(
+    "#box4",
+    {
+        x: 1000,
+        duration: 3,
+        delay: 3,
+        rotate: 360,
+
+    }
+)
+
+tl.to(
+    "#box5",
+    {
+        x: 1000,
+        duration: 3,
+        //* We do not have to give any delay as it will go after the previous animation automatically because of timeline
+        rotate: 360,
+
+    }
+)

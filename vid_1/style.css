@@ -48,6 +48,8 @@ h1{
     position: relative;
     z-index: 10;
     margin: 20px;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 #box4{
@@ -59,4 +61,49 @@ h1{
     background-color: darkorange;
     top: 1280px;
     left: 0;
+}
+
+#container{
+    position: relative;
+    margin-top: 70px; /* Adjust based on #nav's height and margin */
+    
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+#logo img{
+    width: 70px;
+    
+
+}
+
+#nav {
+    height: 70px; /* Matches the assumed height of the logo image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically centers content within the nav */
+    margin: 10px;
+    padding: 0 10px; /* Added padding to ensure content is not flush with edges */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; /* Reset margin to prevent it from affecting nav height */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
 }

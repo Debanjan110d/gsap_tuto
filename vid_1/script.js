@@ -1,3 +1,27 @@
+var tl = gsap.timeline()
+tl.from("#logo",
+    {
+        y: -20,
+        duration: 1,
+        delay: 1,
+        opacity: 0,
+        ease: "power3.out"
+    }
+)
+tl.from("li",
+    {
+        y: -20,
+        duration: 1,
+        opacity: 0,
+        stagger: 0.5,
+        ease: "power3.out"
+
+    }
+)
+
+
+
+
 gsap.to(
     "#box1",//Have to mention the same name as we write in css 
     {
@@ -77,14 +101,14 @@ gsap.to(
 
 //! Timeline
 
-var tl = gsap.timeline() // Just declare the timeline function to the variable
+// var tl = gsap.timeline() // Just declare the timeline function to the variable
 
 tl.to(
     "#box4",
     {
         x: 1000,
         duration: 3,
-        delay: 3,
+
         rotate: 360,
 
     }
@@ -100,3 +124,5 @@ tl.to(
 
     }
 )
+
+

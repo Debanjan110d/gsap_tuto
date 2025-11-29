@@ -98,3 +98,31 @@ gsap.from("#page3 h1", {
 *   **`markers`**: Essential for debugging start/end points.
 *   **`scrub`**: Syncs animation playback with scroll position.
 *   **Function-based values**: allow dynamic properties based on index.
+
+---
+
+## Chapter 5: Pinning and Horizontal Scroll
+
+You implemented a horizontal scroll effect (marquee) for Page 5.
+
+**Key Concepts:**
+*   **`pin: true`**: This is crucial. It "pins" the trigger element (the container `#page5`) in place while the user scrolls. This creates the illusion that we are pausing vertical scroll to perform a horizontal animation.
+*   **`transform: "translate(-140%)"`**: This moves the text to the left. Since the container is pinned, the user sees the text sliding across the screen as they scroll down.
+*   **`end: "bottom -100%"`**: This defines how long the pin lasts. The user has to scroll an extra 100% of the viewport height to complete the animation.
+*   **`scrub: 3`**: A higher scrub value makes the animation very smooth and slightly delayed relative to the scroll, giving it a "heavy" feel.
+
+**Example (`#page5 h1`):**
+```javascript
+gsap.to("#page5 h1", {
+    transform: "translate(-140%)",
+    scrollTrigger: {
+        trigger: "#page5",
+        pin: true,
+        scroller: "body",
+        markers: true,
+        start: "top 0%",
+        end: "bottom -100%",
+        scrub: 3
+    }
+})
+```

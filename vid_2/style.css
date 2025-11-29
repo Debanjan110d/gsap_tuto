@@ -11,6 +11,7 @@ html,body{
 
 body{
     background: #000;
+    overflow-x: hidden;
 }
 
 
@@ -47,4 +48,30 @@ body{
     width: 100px;
     height: 100px;
     background-color: #eaff00;
+}
+
+#page4{
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page5{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+#page5 h1{
+    font-size: 30vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    white-space: nowrap;
+    transform: translateX(10%);
 }

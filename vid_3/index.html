@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Tutorial - Video 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="string">
+        <svg width="100%" height="200" viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <path d="M 10 100 Q 500 10 990 100" stroke="white" stroke-width="5" fill="transparent" /> <!--It goes like this M
+            10 100 Q 500 10 990 100 means move to 10 100 then curve to 500 10 then curve to 990 100 these are the control
+            points (axis points ) -->
+
+
+            <!-- To make it easy to understand we can add circles -->
+            <circle cx="10" cy="100" r="10" fill="white" />
+            <circle cx="990" cy="100" r="10" fill="white" />
+            <circle cx="500" cy="55" r="10" fill="white" />
+        </svg>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

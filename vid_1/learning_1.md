@@ -1,4 +1,4 @@
-# GSAP Learning Journey - Chapter 1
+# GSAP Tutorial - Video 1: GSAP Basics & Timelines
 
 This document tracks your progress and understanding of GSAP (GreenSock Animation Platform) based on the code you have written in `vid_1`.
 

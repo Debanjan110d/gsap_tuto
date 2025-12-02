@@ -1,4 +1,4 @@
-# GSAP Learning Journey - Chapter 2
+# GSAP Tutorial - Video 2: ScrollTrigger & Pinning
 
 This document tracks your progress and understanding of GSAP ScrollTrigger based on the code you have written in `vid_2`.
 

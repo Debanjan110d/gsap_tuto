@@ -10,10 +10,19 @@
 
 <body>
 
+    <!--
+        Demo: Custom Cursor following the mouse using GSAP.
+        Structure:
+        - #cursor: the faux cursor element we animate
+        - #main: full-viewport wrapper that listens to mousemove
+        - #image: a focal element that changes cursor scale on hover
+    -->
     <div id="cursor"></div>
     <div id="main">
+        <div id="image"></div>
     </div>
 
+    <!-- GSAP core for animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+    display: flex; /* Flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main h1 {
+    font-size: 5rem;
+    overflow: hidden; /* Hide the starting position of characters (y: 100) */
+}
+
+h1 span {
+    display: inline-block; /* Required for transform animations to work on spans */
+}

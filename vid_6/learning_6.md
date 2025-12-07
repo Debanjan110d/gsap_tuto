@@ -14,5 +14,15 @@ This project demonstrates a simple yet effective text animation using GSAP.
     - `h1 span` is set to `display: inline-block` so that transform properties (like `y` translation) work on them. Inline elements cannot be transformed.
     - `#main h1` has `overflow: hidden` to ensure the characters appear to "rise up" from nowhere, rather than being visible below the text line before the animation starts.
 4.  **Animation**:
-    - GSAP is used to animate the spans from a starting position (`y: 100`) and opacity (`0`) to their natural position.
     - `stagger: 0.05` creates the wave-like effect where each character starts animating slightly after the previous one.
+
+## Advanced Animation (Updated)
+
+We enhanced the animation to split the text from the middle:
+
+1.  **Logic**: The code calculates the `middleIndex` of the text.
+2.  **classes**: Characters before the middle index get the class `first-half`, and those after get `second-half`.
+3.  **GSAP**:
+    - `first-half` spans animate with a positive stagger (`0.05`), flowing left-to-right (or start-to-middle).
+    - `second-half` spans animate with a negative stagger (`-0.05`), flowing right-to-left (or end-to-middle), creating a converging effect.
+

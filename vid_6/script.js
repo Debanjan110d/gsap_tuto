@@ -54,9 +54,9 @@ function brokenText() {
     // Iterate over each character and wrap it in a span tag
     h1_splited_text.forEach((element, index) => {
         if (index < middleIndex) {
-            firstHalf += `<span>${element}</span>`;
+            firstHalf += `<span class="first-half">${element}</span>`;
         } else {
-            secondHalf += `<span>${element}</span>`;
+            secondHalf += `<span class="second-half">${element}</span>`;
         }
     });
 
@@ -69,10 +69,18 @@ brokenText();
 
 //* Animation
 
-gsap.from("h1 span", {
+gsap.from("h1 span.first-half", {
     duration: 1,
     y: 100,
     opacity: 0,
     ease: "power3.out",
     stagger: 0.05
+})
+
+gsap.from("h1 span.second-half", {
+    duration: 1,
+    y: 100,
+    opacity: 0,
+    ease: "power3.out",
+    stagger: -0.05
 })

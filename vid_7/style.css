@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+
+#page1,
+#page2,
+#page3 {
+    height: 100vh;
+    width: 100vw;
+}
+
+#move {
+    background-color: rgb(17, 231, 159);
+    display: flex; /* Arrange marquee items in a row */
+    padding: 2vw 0;
+    overflow: hidden; /* Hide overflow for seamless scrolling */
+}
+
+.marq h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: #ffffff 1px 1px 1px;
+    color: #111;
+}
+
+.marq {
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw; /* Space between text and arrow */
+    padding: 0 1.5vw;
+    transform: translateX(0); /* Ensure starting position is neutral */
+}
+
+img {
+    background-color: transparent;
+    padding: 0 1vw;
+}

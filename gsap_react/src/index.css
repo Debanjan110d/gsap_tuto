@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+}
+body{
+  background-color: #000;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.box{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(to right bottom, rgb(248, 66, 103), crimson);
+}
+
+.circle{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+    margin: 20px;
+  padding: 20px;
+  background: linear-gradient(to right bottom, lightblue, royalblue); 
+}

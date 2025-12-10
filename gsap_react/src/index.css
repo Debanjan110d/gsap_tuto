@@ -42,3 +42,28 @@ body{
   padding: 20px;
   background: linear-gradient(to right bottom, lightblue, royalblue); 
 }
+
+.main-box {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.animate-btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.animate-btn:hover {
+  transform: scale(1.05);
+}
